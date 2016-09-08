@@ -1,4 +1,4 @@
-var bettingPool = 0;
+var bettingPool = 1;
 
 function roll() {
 	//We use Math.random() to generate a random number between 0 and 1. Using Math.floor() and some arithmetic lets us simulate rolling a 6-sided die
