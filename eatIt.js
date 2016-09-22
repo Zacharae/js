@@ -26,15 +26,18 @@
 	
 */
 
+function NewObj(oldObj) {
+	this.name = oldObj.name;
+	this.score = oldObj.pizza*2 + oldObj.cheeseburger*5 + oldObj.hotdog*3
+}
+
 function eatIt(arr) {
 	var newArr = [];
 	for(i=0;i< arr.length;i++){
 		var oldObj = arr[i];
 		
-		var newObj = {
-			name: oldObj.name,
-			score: oldObj.pizza*2 + oldObj.cheeseburger*5 + oldObj.hotdog*3
-		}
+		var newObj = new NewObj(oldObj);
+
 		newArr.push(newObj)
 	}
 	return newArr;
