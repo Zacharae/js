@@ -1,4 +1,4 @@
-//sorts an array ~ works from 0 to 9 :P
+//sorts an array of numbers
 
 function reorder(arr) {
 	return arr.sort(function(a, b) {
